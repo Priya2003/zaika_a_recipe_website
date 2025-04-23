@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/zaika.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Zaika-Ghar ka Swaad</title>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <!-- Navbar Section -->
+    <nav class="nav">
+      <h2>Zaika</h2>
+
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">Explore</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">Popular Recipe</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Testimonials</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#" id="signup-link">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div class="header__title">
+      <h1>
+        Savor the
+        <span class="highlight">Delicious Food &</span>
+        <span class="highlight">Drinks Recipes</span> for Every Occasion
+      </h1>
+
+      <div class="head-discription">
+        <h4>
+          <p>Your Next Favorite Meal Starts Here</p>
+        </h4>
+      </div>
+      <button class="btn--text btn--scroll-to head-learn-more">
+        Recipe &DownArrow;
+      </button>
+      <img src="./img/bg.png" class="header__img" alt="Minimalist bank items" />
+    </div>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search by name..." />
+  </div>
+
+  <div id="person-list"></div>
+
+  <script src="search-component.js"></script>
+
+  <section class="section" id="section--2">
+    <div class="section__title">
+      <h2 class="section__description">Popular Recipes</h2>
+      <h3 class="section__header">Everything as simple as possible.</h3>
+    </div>
+
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button class="btn operations__tab operations__tab--1 " data-tab="1">
+          <span>Milkshake</span>
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>Biryani</span>
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>Barbecue</span>
+        </button>
+      </div>
+      <div class="operations__content operations__content--1 operations__content--active">
+        <div class="operations__icon operations__icon--1">
+          <ion-icon name="bookmarks-outline" class="t-icon"></ion-icon>
+        </div>
+        <h5 class="operations__header">How to make Milkshake!</h5>
+        <img class="tab-img" src="./img/milkshake.jpg" alt="milkshake" />
+        <p>
+          A milkshake is a delicious and creamy beverage made by blending ice cream with milk, often accompanied by flavorings like fruit syrup, chocolate sauce, or sweeteners. To make the perfect milkshake, start by softening 1 cup of ice cream for about 10 to 15 minutes to make it easier to blend. At the same time, place your glass in the freezer to chill it. Once ready, measure 1/4 cup of milk and add it to the softened ice cream in a blender. Blend the mixture until smooth and creamy. If desired, you can mix in additional flavorings such as fruit syrup, chocolate sauce, or even crushed cookies to enhance the flavor. Once blended to your desired consistency, pour the milkshake into the chilled glass, top it with whipped cream, and serve it with a straw. For an extra treat, you can even add sprinkles, chocolate chips, or fruit pieces on top. Enjoy your milkshake right away, as it’s best served cold and fresh!
+        </p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <ion-icon name="bookmarks-outline" class="t-icon"></ion-icon>
+        </div>
+        <h5 class="operations__header">How to make Biryani?</h5>
+
+        <img class="tab-img" src="./img/biryani.jpg" alt="" />
+        <p>
+          Biryani is a flavorful and aromatic rice dish made by layering cooked rice with spiced meat, vegetables, or both. To prepare, start by marinating 500g of chicken or mutton in yogurt, ginger-garlic paste, turmeric, red chili powder, garam masala, and salt for at least 1 hour. Meanwhile, rinse and soak 2 cups of basmati rice for 30 minutes. In a large pot, heat ghee or oil and sauté onions until golden brown. Add the marinated meat and cook until tender. In a separate pot, bring water to a boil, add the soaked rice, and cook until the rice is 70% done. Once the rice is ready, layer it over the cooked meat, adding saffron-soaked milk for color and flavor. Cover and cook on low heat (dum) for 20-30 minutes to let the flavors meld. Serve hot with raita and enjoy the rich, aromatic layers of biryani.
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <ion-icon name="checkmark-circle-outline" class="t-icon"></ion-icon>
+        </div>
+        <h5 class="operations__header">How to make Barbecue?</h5>
+
+        <img class="tab-img" src="./img/barbecue.jpg" alt="" />
+        <p>Barbecue chicken is a smoky and juicy dish made by marinating chicken in a blend of spices and cooking it on a grill. Start by marinating 6 chicken pieces in a mixture of yogurt, lemon juice, garlic paste, ginger paste, red chili powder, turmeric, cumin, coriander, and a bit of oil for 2 hours. Preheat your grill or barbecue to medium heat. Once the chicken has marinated, place it on the grill and cook for 20-25 minutes, turning occasionally until the chicken is fully cooked and has a nice char. During the grilling process, brush the chicken with your favorite barbecue sauce to add a sweet and tangy flavor. Once done, remove from the grill and let it rest for a few minutes. Serve the barbecue chicken with a side of grilled vegetables, coleslaw, or a fresh salad. Enjoy the smoky, savory goodness!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section--1">
+    <div class="section__title">
+      <h2 class="section__description">Features</h2>
+      <h3 class="section__header">
+        Everything you need to know about different cuisines.
+      </h3>
+    </div>
+
+    <div class="features">
+      <img src="./img/italian.jpg" alt="Computer" class="features__img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+        </div>
+        <h5 class="features__header">Italian Cuisine</h5>
+        <p>
+          Italian cuisine is renowned for its use of fresh ingredients like tomatoes, olive oil, garlic, and herbs. 
+          Famous for dishes like pasta, pizza, and risotto, it emphasizes simplicity and quality, focusing on bold yet balanced flavors.
+        </p>
+      </div>
+
+      <div class="features__feature">
+        <div class="features__icon">
+          <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+        </div>
+        <h5 class="features__header">Mexican Cuisine</h5>
+        <p>
+          Mexican cuisine is vibrant and full of flavors, with an emphasis on ingredients like corn, beans, chili peppers, and avocados.
+          Tacos, enchiladas, and guacamole are just a few examples, showcasing bold, spicy, and savory tastes.
+        </p>
+      </div>
+      <img src="./img/mexican.jpg" alt="Plant" class="features__img" />
+
+      <img src="./img/mediterranean.jpg" alt="Credit card" class="features__img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+        </div>
+        <h5 class="features__header">Drinks & Shakes</h5>
+        <p>
+          Mediterranean cuisine highlights fresh vegetables, whole grains, fish, and olive oil. 
+          Known for its healthy and flavorful dishes like Greek salad, hummus, and grilled fish, it emphasizes seasonal ingredients and lighter meals with plenty of herbs and spices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section--3">
+    <div class="section__title section__title--testimonials">
+      <h2 class="section__description">Looks what chefs from different countries say about recipes!!</h2>
+      <h3 class="section__header">
+        Professional Chefs providing authentic recipes.
+      </h3>
+    </div>
+
+    <div class="slider">
+      <div class="slide slide--1">
+        <div class="testimonial">
+          <h5 class="testimonial__header">🌟 “Every grain of biryani tells a royal tale.”
+          </h5>
+          <blockquote class="testimonial__text">
+            "Food is emotion, and biryani is a story in every grain. It reminds me of the rich Nawabi culture I grew up with.
+             The balance of spice, aroma, and tradition is unmatched."
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/ranveer.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Ranveer Brar</h6>
+            <p class="testimonial__location">Lucknow, India</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide slide--2">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            🌟 “Every dish is a dialogue between culture and creativity.”
+          </h5>
+          <blockquote class="testimonial__text">
+            "To me, cooking is about respecting ingredients. Whether it’s Mediterranean freshness, Italian simplicity, 
+            or Indian depth – every cuisine has a soul that tells a story."
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/garima.jpg" alt="" class="testimonial__photo" />
+
+            <h6 class="testimonial__name">Garima Arora</h6>
+            <p class="testimonial__location">Mumbai, India</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide slide--3">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            🌟 “Food should be fun, fearless, and full of flavor.”
+          </h5>
+          <blockquote class="testimonial__text">
+            "I love putting a fun twist on classics. Whether it's a crazy milkshake or barbecue chicken, 
+            I’m all about blending bold flavors with creativity – food should be exciting!"
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/nick.jpg" alt="" class="testimonial__photo" />
+
+            <h6 class="testimonial__name">Nick DiGiovanni</h6>
+            <p class="testimonial__location">Boston, USA</p>
+          </address>
+        </div>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+  <section class="section section--sign-up">
+    <div class="section__title">
+      <h3 class="section__header">
+        Lets explore foods from all over the world.
+      </h3>
+    </div>
+    <button class="btn btn--show-modal">Open your free account today!</button>
+  </section>
+
+
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Taste from Well Plated <br />
+      in just <span class="highlight">5 minutes</span>
+    </h2>
+    <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" />
+      <label>Last Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <button class="btn">Next step &rarr;</button>
+    </form>
+
+
+
+
+  </div>
+  <div class="overlay hidden"></div>
+</body>
+
+</html>
